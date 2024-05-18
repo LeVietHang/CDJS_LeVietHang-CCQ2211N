@@ -1,23 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Logo from "./assets/images/logo.webp";
-import Slider1 from "./assets/images/12.webp";
-import Slider2 from "./assets/images/11.webp";
+import Slider from "./components/Slider.jsx";
+import ChinhSachItem from "./components/ChinhSachItem.jsx";
+import Database from "./data_fake.json";
+import Product from "./components/Product.jsx";
 
-import s1 from "./assets/images/s1.webp";
-import s2 from "./assets/images/s2.webp";
-import s3 from "./assets/images/s3.webp";
-import s4 from "./assets/images/s4.webp";
-import { BsSearchHeart } from "react-icons/bs";
-import { IoBagRemove } from "react-icons/io5";
-import {
-  FaUserEdit,
-  FaCartPlus,
-  FaYoutube,
-  FaGoogle,
-  FaFacebook,
-  FaInstagram,
-} from "react-icons/fa";
+import a1 from "./assets/images/a1.png";
+import a2 from "./assets/images/a2.png";
+import a3 from "./assets/images/a3.png";
+import a4 from "./assets/images/a4.png";
+import a5 from "./assets/images/a5.png";
+
+
+import { FaRegUser } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
+import { MdLocalGroceryStore } from "react-icons/md";
+import { FaYoutube, FaGoogle, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaBell } from "react-icons/fa";
 function App() {
   return (
@@ -112,94 +111,62 @@ function App() {
                 </div>
               </nav>
             </div>
-            <div className="col-md-2">
-              <BsSearchHeart />
-              <IoBagRemove />
-              <FaUserEdit />
-              <FaCartPlus />
-              <FaBell />
+            <div className="col-md-2 mt-1">
+              <FaRegUser style={{ fontSize: "20px", marginRight: "15px" }} />
+              <CiHeart style={{ fontSize: "20px", marginRight: "15px" }} />
+              <MdLocalGroceryStore
+                style={{ fontSize: "20px", marginRight: "15px" }}
+              />
             </div>
           </div>
         </div>
       </header>
       <main>
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src={Slider1} class="d-block w-100" alt="..." />
+        <Slider />
+      <div className="ChinhSach">
+          <div className="row py-5">
+            <div className="col-md-3">
+              <ChinhSachItem
+                image="https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_1.png?1712652027135"
+                alt="chinhsach1"
+                title="Miễn Phí Vận Chuyển"
+                des="Cho đơn hàng từ 5000000"
+              />
             </div>
-            <div class="carousel-item">
-              <img src={Slider2} class="d-block w-100" alt="..." />
+            <div className="col-md-3">
+              <ChinhSachItem
+                image="https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_2.png?1712652027135"
+                alt="chinhsach1"
+                title="Đổi Hàng Tận Nhà"
+                des="Trong vòng 7 ngày"
+              />
             </div>
-            <div class="carousel-item">
-              <img src={Slider1} class="d-block w-100" alt="..." />
+            <div className="col-md-3">
+              <ChinhSachItem
+                image="https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_3.png?1712652027135"
+                alt="chinhsach1"
+                title="Thanh Toán COD"
+                des="Hoặc thanh toán quét mã QR"
+              />
+            </div>
+            <div className="col-md-3">
+              <ChinhSachItem
+                image="https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_4.png?1712652027135"
+                alt="chinhsach1"
+                title="Hotline: 1900 12345"
+                des="Hỗ trợ từ 08h00 đến 22h00"
+              />
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExample"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <hr />
         </div>
 
-        <div className="slider">
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src={s1} class="d-block w-100" alt="nen1" />
-              </div>
-              <div class="carousel-item">
-                <img src={s2} class="d-block w-100" alt="nen2" />
-              </div>
-              <div class="carousel-item">
-                <img src={s3} class="d-block w-100" alt="nen3" />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
         <div>
           <h1 class="text-center mt-3">New Product</h1>
           <div class="row">
             <div class="col-md-3">
               <div class="card">
-                <img src={s4} alt="logo" />
+                <img src={a2} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -211,7 +178,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s3} alt="logo" />
+                <img src={a1} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -223,7 +190,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s2} alt="logo" />
+                <img src={a2} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -235,7 +202,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s3} alt="logo" />
+                <img src={a3} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -249,7 +216,7 @@ function App() {
           <div class="row mt-4">
             <div class="col-md-3">
               <div class="card">
-                <img src={s4} alt="logo" />
+                <img src={a4} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -261,7 +228,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s2} alt="logo" />
+                <img src={a5} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -273,7 +240,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s3} alt="logo" />
+                <img src={a1} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -285,7 +252,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s2} alt="logo" />
+                <img src={a2} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -302,7 +269,7 @@ function App() {
           <div class="row">
             <div class="col-md-3">
               <div class="card">
-                <img src={s4} alt="logo" />
+                <img src={a4} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -314,7 +281,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s2} alt="logo" />
+                <img src={a5} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -326,7 +293,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s3} alt="logo" />
+                <img src={a3} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -338,7 +305,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s4} alt="logo" />
+                <img src={a5} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -352,7 +319,7 @@ function App() {
           <div class="row mt-4">
             <div class="col-md-3">
               <div class="card">
-                <img src={s2} alt="logo" />
+                <img src={a1} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -364,7 +331,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s4} alt="logo" />
+                <img src={a5} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -376,7 +343,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s3} alt="logo" />
+                <img src={a4} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -388,7 +355,7 @@ function App() {
             </div>
             <div class="col-md-3">
               <div class="card">
-                <img src={s4} alt="logo" />
+                <img src={a2} alt="logo" />
                 <div class="card-body">
                   <h5 class="card-title">Tên sản phẩm</h5>
                   <p class="card-text">Mô tả sản phẩm ngắn gọn.</p>
@@ -408,13 +375,16 @@ function App() {
               <div class="col-md-4 pt-4">
                 <h3 class="widgettilte">CHÚNG TÔI LÀ AI ?</h3>
                 <p class="pt-1">
-                <i> Copyright@ CELAH Shop  là hệ thống cửa hàng mỹ phẩm chính hãng và dịch vụ chăm sóc sắc đẹp chuyên sâu với hệ thống cửa hàng trải dài trên toàn quốc; và hiện đang là đối tác phân phối chiến lược tại thị trường Việt Nam.</i>
+                  <i>
+                    {" "}
+                    Copyright@ CELAH Shop chủ trương bắt nhịp theo xu hướng trang sức thời trang thế giới. Tất cả những thiết kế trang sức ra đời đều đạt đến sự hoàn hảo và tinh xảo lý tưởng, phù hợp với nhiều đối tượng khách hàng khác nhau, hướng đến sự trẻ trung, hiện đại và thanh lịch.
+                  </i>
                 </p>
                 <p class="pt-1">
                   Địa chỉ: 79, ĐS 6, P.Phước Long B ,Q9,TP. Thủ Đức
                 </p>
                 <p class="pt-1">
-                  Điện thoại: 0816 949 555 (call, zalo) - Email:
+                 Điện thoại: 0816 949 555 (call, zalo) - Email:
                   Viethang642@gmail.com
                 </p>
                 <h3 class="widgettilte">MẠNG XÃ HỘI</h3>
@@ -441,7 +411,7 @@ function App() {
         </section>
         <section class="dhl-copyright bg-dark py-3">
           <div class="container text-center text-white">
-            Thiết kế bởi: Lê Việt Hằng- Phone: 0816949555
+            Thiết kế bởi: Lê Việt Hằng- Phone: 0816 949 555
           </div>
         </section>
       </footer>
