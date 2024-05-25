@@ -1,0 +1,33 @@
+{
+    "Categorys":[
+        {"id":1, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":2, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":3, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":4, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":5, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":6, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":7, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"},
+        {"id":8, "image": "hinh.jpg", "name": "thoi trang nu", "slug": "thoi-trang-nu"}
+    ],
+    "Oderdetails":[
+        {"id":1, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":2, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":3, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":4, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":5, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":6, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":7, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":8, "username": "Nguyen Van Hai", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"}
+    ],
+    "Order":[
+        {"id":1, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":2, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":3, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":4, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":5, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":6, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":7, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"},
+        {"id":8, "username": "Nguyen Van Ba", "phone": "0123456789", "email": "vanhai@gmail.com","dateorder": "10/05/2024"}
+    ]
+
+}
